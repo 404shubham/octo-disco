@@ -1,0 +1,322 @@
+:root {
+    --variable-name: value;
+  }
+
+  selector{
+    property: var(--variable-name);
+  }
+
+  :root {
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #9f9f9f;
+    --primary-color: #ffffff;
+    --secondary-color: #d67214;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+  }
+  /* Variables end */
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* CSS Resets */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+  
+  body {
+    font-family: var(--font-family);
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+  }
+
+  nav h1 {
+    color: var(--primary-color);
+  }
+  
+  nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+  }
+  nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  
+  nav ul li {
+    font-weight: var(--bold-font);
+  }
+
+  .burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+    background-color: var(--bg-color);
+  }
+  .hero {
+
+    align-items: center;
+    justify-content: center;
+ 
+    margin: auto;
+    background-color: var(--bg-color);
+  }
+
+  .hero img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--bg-color);
+
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  }
+  
+  .bio {
+    width: 50rem;
+    padding: 0.625rem;
+
+    background-color: transparent;
+    text-align: center;
+  }
+  
+  .bio h1 {
+    text-align: center;
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .bio p {
+    
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+    text-align: center;
+  }
+  .more-about {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+    text-align: center;
+  }
+  
+  .more-about h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+  }
+  
+  .more-about p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+    text-align: center;
+  }
+
+  .skills {
+    max-width: 30em;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+
+    padding-left: 50px;
+    padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  
+  }
+  
+  .skill-header {
+    margin-bottom: 1rem;
+  }
+  
+  .skills-wrapper img {
+    padding: 1.25rem;
+  }
+
+  .Inspiration
+  {
+         padding-left: 50px;
+         padding-top: 50px;
+         padding-bottom: 70px;
+         background-color: var(--bg-color);
+         text-align: center;
+  }
+  
+  .Inspiration h2
+  {
+    text-align: center;
+    font-size: large;
+  }
+
+  #Iron-man
+  {
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+  }
+
+  .Inspiration h3
+  {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  #Rocky
+  {
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+  }
+  
+  .icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .icon-card {
+    
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .contact {
+    margin-top: 2rem;
+  }
+
+  .contact h4
+  {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: var(--bottom-margin-2); 
+  }
+  
+  .contact h2 {
+    text-align: center;
+    margin-bottom: var(--bottom-margin-2);
+    font-size: xx-large;
+  }
+  
+  .contact-form-container {
+    max-width: 40.75rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    background-color: var(--bg-color);
+  }
+  .contact-form-container label {
+    line-height: 2.7em;
+    font-weight: var(--bold-font);
+    color: var(--primary-color);
+  }
+  
+  .contact-form-container textarea {
+    min-height: 6.25rem;
+    font-size: 14px;
+    
+  }
+  
+  .contact-form-container .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 2px outset var(--primary-color);
+    font-size: 0.875rem;
+    outline: none;
+    
+  }
+  .input-field::placeholder {
+    padding: 0.5rem;
+    color: var(--primary-color);
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+  }
+  .submit-btn:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+  }
+  .socials {
+    background-color: var(--bg-color);
+    align-items: center;
+  }
+  
+  .socicon {
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+  }
+  
+  footer {
+    background-color: var(--bg-color);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    backdrop-filter: blur(10px);
+  }
+  
